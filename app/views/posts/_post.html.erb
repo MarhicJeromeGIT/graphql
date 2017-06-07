@@ -1,0 +1,9 @@
+<li>
+  <strong><%= post.title %></strong>
+  <ul>
+    <!-- Voluntary N+1 query problem -->
+    <% post.comments.each do |comment| %>
+      <li><%= comment.body %></li>
+    <% end %>
+  </ul>
+</li>
