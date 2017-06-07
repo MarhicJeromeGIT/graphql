@@ -58,3 +58,5 @@ gem 'graphiql-rails', group: :development
 gem 'faker'
 gem "skylight"
 gem 'dotenv-rails'
+
+gem 'paper_trail'
